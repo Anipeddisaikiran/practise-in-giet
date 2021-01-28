@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sample title</title>
+	<link rel="icon" href="angry.svg"/>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
+	<style type="text/css">
+		*{
+			background-color: blue;
+		}
+		.parent{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
+
+		}
+		.child{
+			border: 1px dashed maroon;
+			font-size: 25px;
+			padding: 1%;
+			margin: 2%;
+			background-color: maroon;
+			justify-content: space-between;
+		}
+		@media only screen and (min-width: 320px) and (max-width: 480px){
+	.child{
+		width: 40%;
+		font-size: 25px;
+		background-color: pink;
+	}
+}
+    @media only screen and (min-width: 481px) and (max-width: 767px){
+	.child{
+		width: 40%;
+		font-size: 700;
+		border: 3px solid #000;
+		border-radius: 10px;
+		box-shadow: 3px 3px 3px black;
+		background-color: red;
+	}
+}
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+    .child{
+    	width: 40%;
+    	box-shadow: 0px 8px 8px -8px yellow;
+
+    }
+}
+	</style>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+</head>
+<body>
+	<section class="parent">
+		<article class="child">ONEPLUS</article>
+		<article class="child">HONOR</article>
+		<article class="child">MOTO</article>
+		<article class="child">MI</article>
+		<article class="child">REAL ME</article>
+	</section>
+<!--  1.Basic selecto> 
+	  a. id (#)
+	  b.class(.)
+	  c.element(<ELEMENT></ELEMENT>)
+	  d.universal(*)
+	2.Relational selector
+	  a.descendant combiner(>)
+	  b.child combiner( )
+	  c.Adjacent sibling selectors(+)
+	  d.General sibling selectors(~)
+	   e.attribute selectors
+	3.pseudo classes    -->
+
+</body>
+</html>
